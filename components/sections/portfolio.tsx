@@ -174,6 +174,7 @@ export function Portfolio() {
                                     width={200}
                                     height={150}
                                     className="w-full h-32 object-cover rounded-lg"
+                              
                                   />
                                 </div>
                               ))}
