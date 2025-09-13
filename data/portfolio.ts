@@ -192,7 +192,7 @@ export const portfolioData: PortfolioItem[] = [
     title: "Corner Mansion",
     category: "residential",
     description: "Exclusive luxury villa with premium finishes and landscaped gardens.",
-    image: "/portfolio/Back Cornere.jpg",
+    image: "/portfolio/corner.jpg",
     details: {
       client: "Private Client",
       location: "Islamabad, Pakistan",

@@ -28,7 +28,7 @@ export function About() {
     { src: "/Approved/DHA.jpg", alt: "DHA" },
     { src: "/Approved/CDA.jpeg", alt: "CDA" },
     { src: "/Approved/Kohinoor.jpg", alt: "Kohinoor City" },
-    { src: "/Approved/New-City.jpeg", alt: "New City" },
+    { src: "/Approved/New.jpeg", alt: "New City" },
     { src: "/Approved/RDA.jpg", alt: "RDA" },
   ]
 
