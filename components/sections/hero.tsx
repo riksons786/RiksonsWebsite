@@ -9,11 +9,8 @@ import Image from "next/image"
 const BACKGROUND_IMAGES = [
   "/portfolio/Enscape_2024-11-19-16-09-42.png",
   "./portfolio/G2.jpg",
-  "/portfolio/Enscape_2024-11-19-16-52-50.png",
   "/portfolio/Enscape_2024-11-19-16-53-45.png",
   "/portfolio/Enscape_2024-11-19-17-14-26.png",
-  "./portfolio/03.jpg",
-  "./portfolio/04.jpg",
   "/portfolio/Enscape_2025-01-10-15-34-31.png",
 ]
 
@@ -65,8 +62,7 @@ export function Hero() {
 
           {/* Subheading - text is white for readability */}
           <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto text-pretty">
-            Riksons Engineering Pvt Ltd delivers exceptional architecture, engineering, and construction services across
-            Pakistan. From concept to completion, we build your vision.
+            Leaders in quality engineering services and construction.
           </p>
 
           {/* Service Tags */}
