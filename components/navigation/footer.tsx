@@ -34,7 +34,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-primary mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {["About", "Services", "Portfolio", "Contact"].map((item) => (
                 <li key={item}>
@@ -51,7 +51,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold text-foreground mb-4">Services</h3>
+            <h3 className="text-lg font-semibold text-primary mb-4">Services</h3>
             <ul className="space-y-2">
               {["Architecture", "Engineering", "Construction", "Project Management"].map((service) => (
                 <li key={service}>
