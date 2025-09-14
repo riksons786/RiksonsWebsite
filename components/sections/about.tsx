@@ -76,7 +76,7 @@ export function About() {
             </div>
 
             <Button asChild className="bg-primary hover:bg-primary/90 flex">
-              <Link href="#services">Explore Our Services</Link>
+              <Link href="/Services">Explore Our Services</Link>
             </Button>
           </div>
 

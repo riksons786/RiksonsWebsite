@@ -133,13 +133,13 @@ export function Services() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild className="bg-primary hover:bg-primary/90">
-              <Link href="#contact" className="flex items-center gap-2">
+              <Link href="/Contact" className="flex items-center gap-2">
                 Get Free Consultation
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline">
-              <Link href="#portfolio">View Our Work</Link>
+              <Link href="/Portfolio">View Our Work</Link>
             </Button>
           </div>
         </div>

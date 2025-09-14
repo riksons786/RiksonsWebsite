@@ -15,12 +15,6 @@ export default function HomePage() {
     <main className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Testimonials />
-      <FAQ />
-      <Contact />
       <Footer />
       <ScrollToTop />
     </main>

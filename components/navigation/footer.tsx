@@ -10,7 +10,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Image src="/logo.jpg" alt="Riksons Engineering Pvt Ltd" width={40} height={40} className="rounded" />
+              <Image src="/logo.jpg" alt="Riksons Engineering Pvt Ltd" width={80} height={80} className="rounded" />
               <div>
                 <span className="text-xl font-bold text-foreground">RIKSONS</span>
                 <p className="text-sm text-muted-foreground">Engineering Pvt Ltd</p>
@@ -39,7 +39,7 @@ export function Footer() {
               {["About", "Services", "Portfolio", "Contact"].map((item) => (
                 <li key={item}>
                   <Link
-                    href={`#${item.toLowerCase()}`}
+                    href={`/${item}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
                     {item}
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground">© 2024 Riksons Engineering Pvt Ltd. All rights reserved.</p>
+          <p className="text-muted-foreground">© 2025 Riksons Engineering Pvt Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

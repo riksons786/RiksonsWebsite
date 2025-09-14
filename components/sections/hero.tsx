@@ -1,36 +1,70 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
+const BACKGROUND_IMAGES = [
+  "/portfolio/Enscape_2024-11-19-16-09-42.png",
+  "./portfolio/G2.jpg",
+  "/portfolio/Enscape_2024-11-19-16-52-50.png",
+  "/portfolio/Enscape_2024-11-19-16-53-45.png",
+  "/portfolio/Enscape_2024-11-19-17-14-26.png",
+  "./portfolio/03.jpg",
+  "./portfolio/04.jpg",
+  "/portfolio/Enscape_2025-01-10-15-34-31.png",
+]
+
 export function Hero() {
+  const [current, setCurrent] = useState(0)
+  const [fade, setFade] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false)
+      setTimeout(() => {
+        setCurrent((prev) => (prev + 1) % BACKGROUND_IMAGES.length)
+        setFade(true)
+      }, 500) // duration of fade out
+    }, 6000) // change every 6 seconds
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section id="home" className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Images with fade transition */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/construction-site-background.jpg"
-          alt="Modern construction site with cranes and buildings"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50" />
+        {BACKGROUND_IMAGES.map((img, idx) => (
+          <Image
+            key={img}
+            src={img}
+            alt={`Background ${idx}`}
+            fill
+            priority
+            className={`object-cover absolute inset-0 transition-opacity duration-500 ${
+              idx === current && fade ? "opacity-100" : "opacity-0"
+            }`}
+            style={{zIndex: idx === current ? 2 : 1}}
+          />
+        ))}
+        {/* Make the background even darker */}
+        <div className="absolute inset-0 bg-black/80" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
-          <h1 style={{paddingTop: "40px"}} className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance">
+          <h1 style={{paddingTop: "60px"}} className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 text-balance">
             Building Tomorrow's
             <span className="text-primary block">Infrastructure</span>
           </h1>
 
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto text-pretty">
+          {/* Subheading - text is white for readability */}
+          <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto text-pretty">
             Riksons Engineering Pvt Ltd delivers exceptional architecture, engineering, and construction services across
             Pakistan. From concept to completion, we build your vision.
           </p>

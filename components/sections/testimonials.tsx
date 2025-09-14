@@ -80,7 +80,7 @@ export function Testimonials() {
             Join hundreds of satisfied clients who have rated us 5 stars for our exceptional construction services.
           </p>
           <a
-            href="https://share.google/PaR4ozw20nEhgv8Ci"
+            href="https://www.google.com/search?sca_esv=e126eb4d051b0442&rlz=1C1MMCH_enPK1120PK1120&sxsrf=AE3TifP7Xwrw-M3DpJ26-4ZmTdYkCue2mQ:1757834469743&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E0tmVcKjVkhycl83w4rIkFj6n2wgID2HixLhE7hO-peypirSrjj1CIsq5Y12lxR8g3m-TOIpsM50slKkGSz3vyrXi7J3-NKm8kIGSU4xU30-xaUqDQ%3D%3D&q=RIKSONS+ENGINEERING+PVT.+LTD.+Reviews&sa=X&ved=2ahUKEwjgiZLZ29ePAxUMfKQEHZKdADsQ0bkNegQIHhAD&biw=1272&bih=594&dpr=1.5"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium transition-colors"
