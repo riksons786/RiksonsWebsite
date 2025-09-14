@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
       },
     })
 
-    // Compose email
+    // Compose email to site owner
     const mailOptions = {
       from: `"Riksons Engineering Website" <${process.env.SMTP_USER}>`,
       to: process.env.CONTACT_RECEIVER, // your receiving email
@@ -43,12 +43,37 @@ Submitted at: ${new Date().toLocaleString()}
       `,
     }
 
-    // Send email
+    // Compose reply email to user
+    const replyOptions = {
+      from: `"Riksons Engineering Website" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: "Thank you for contacting Riksons Engineering",
+      text: `
+Hello ${name},
+
+Thank you for reaching out to Riksons Engineering Pvt Ltd! We have received your message regarding "${service}" and will get back to you as soon as possible.
+
+Here is a copy of your message:
+-------------------
+${message}
+-------------------
+
+If you need immediate assistance, feel free to reply to this email or call us directly.
+
+Best regards,
+Riksons Engineering Team
+      `,
+    }
+
+    // Send email to site owner
     await transporter.sendMail(mailOptions)
+
+    // Send reply to user
+    await transporter.sendMail(replyOptions)
 
     return NextResponse.json({
       success: true,
-      message: "Contact form submitted and email sent successfully",
+      message: "Contact form submitted and emails sent successfully",
     })
   } catch (error) {
     console.error("Contact form error:", error)
