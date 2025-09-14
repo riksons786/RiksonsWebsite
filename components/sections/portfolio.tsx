@@ -9,8 +9,16 @@ import { portfolioData, type PortfolioItem } from "@/data/portfolio"
 import { MapPin, Calendar, Ruler, Eye, X } from "lucide-react"
 import Image from "next/image"
 
+const serviceCategories = [
+  { id: "architecture", label: "Architecture" },
+  { id: "construction", label: "Construction" },
+  { id: "interior design", label: "Interior Design" },
+  { id: "engineering", label: "Engineering" },
+]
+
 export function Portfolio() {
-  const [selectedCategory, setSelectedCategory] = useState<string>("all")
+  // Default to first service category
+  const [selectedService, setSelectedService] = useState<string>(serviceCategories[0].id)
   const [selectedProject, setSelectedProject] = useState<PortfolioItem | null>(null)
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
   const [galleryPopupIndex, setGalleryPopupIndex] = useState<number | null>(null)
@@ -18,17 +26,12 @@ export function Portfolio() {
 
   const DISPLAY_LIMIT = 6 // 2 rows (3 columns each)
 
-  const categories = [
-    { id: "all", label: "All Projects" },
-    { id: "residential", label: "Residential" },
-    { id: "commercial", label: "Commercial" },
-    { id: "industrial", label: "Industrial" },
-  ]
-
-  const filteredProjects =
-    selectedCategory === "all"
-      ? portfolioData
-      : portfolioData.filter((project) => project.category === selectedCategory)
+  // Filter projects by service: show projects that have selectedService in their details.services
+  const filteredProjects = portfolioData.filter((project) =>
+    project.details.services.some(
+      (service) => service.toLowerCase().replace(/\s+/g, "") === selectedService.replace(/\s+/g, "")
+    )
+  )
 
   const visibleProjects = showAll ? filteredProjects : filteredProjects.slice(0, DISPLAY_LIMIT)
 
@@ -61,19 +64,18 @@ export function Portfolio() {
             Showcasing Excellence in Construction
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto text-pretty">
-            Explore our diverse portfolio of completed projects spanning residential, commercial, and industrial
-            sectors. Each project represents our commitment to quality, innovation, and client satisfaction.
+            Explore our diverse portfolio of completed projects spanning residential, commercial, and industrial sectors. Each project represents our commitment to quality, innovation, and client satisfaction.
           </p>
         </div>
 
-        {/* Category Filter */}
+        {/* Service Category Filter */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
+          {serviceCategories.map((category) => (
             <Button
               key={category.id}
-              variant={selectedCategory === category.id ? "default" : "outline"}
-              onClick={() => setSelectedCategory(category.id)}
-              className={selectedCategory === category.id ? "bg-primary hover:bg-primary/90" : ""}
+              variant={selectedService === category.id ? "default" : "outline"}
+              onClick={() => setSelectedService(category.id)}
+              className={selectedService === category.id ? "bg-primary hover:bg-primary/90" : ""}
             >
               {category.label}
             </Button>
@@ -174,7 +176,6 @@ export function Portfolio() {
                                     width={200}
                                     height={150}
                                     className="w-full h-32 object-cover rounded-lg"
-                              
                                   />
                                 </div>
                               ))}

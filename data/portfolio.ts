@@ -26,7 +26,7 @@ export const portfolioData: PortfolioItem[] = [
       location: "Lahore, Pakistan",
       year: "2023",
       area: "50,000 sq ft",
-      services: ["Architecture", "Structural Engineering", "Construction Management"],
+      services: ["Architecture", "Structural Engineering", "Construction"],
     },
     gallery: [
       "./portfolio/02.jpg",
@@ -50,7 +50,7 @@ export const portfolioData: PortfolioItem[] = [
       location: "Karachi, Pakistan",
       year: "2023",
       area: "75,000 sq ft",
-      services: ["Architecture", "MEP Engineering", "Project Management"],
+      services: ["Architecture", "MEP Engineering", "Project Management", "Engineering"],
     },
     gallery: [
       "/portfolio/1_2 - Photo.jpg",
@@ -114,7 +114,7 @@ export const portfolioData: PortfolioItem[] = [
       location: "Islamabad, Pakistan",
       year: "2023",
       area: "8,000 sq ft",
-      services: ["Architecture", "Interior Design", "Landscape Architecture"],
+      services: ["Architecture", "Interior Design", "Landscape Architecture, engineering"],
     },
     gallery: [
       "./portfolio/3 (3).jpg",

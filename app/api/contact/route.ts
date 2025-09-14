@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server"
+import nodemailer from "nodemailer"
 
 export async function POST(request: NextRequest) {
   try {
@@ -10,38 +11,44 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 })
     }
 
-    // Here you would typically send an email using a service like:
-    // - Resend
-    // - SendGrid
-    // - Nodemailer with SMTP
-    // - AWS SES
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    })
 
-    // For now, we'll simulate email sending
-    // In a real implementation, you would configure your email service
+    // Compose email
+    const mailOptions = {
+      from: `"Riksons Engineering Website" <${process.env.SMTP_USER}>`,
+      to: process.env.CONTACT_RECEIVER, // your receiving email
+      subject: `New Contact Form Submission from ${name}`,
+      text: `
+New Contact Form Submission from Riksons Engineering Website
 
-    const emailContent = `
-      New Contact Form Submission from Riksons Engineering Website
-      
-      Name: ${name}
-      Email: ${email}
-      Phone: ${phone || "Not provided"}
-      Service Required: ${service}
-      
-      Message:
-      ${message}
-      
-      ---
-      Submitted at: ${new Date().toLocaleString()}
-    `
+Name: ${name}
+Email: ${email}
+Phone: ${phone || "Not provided"}
+Service Required: ${service}
 
-    // Log the submission (in production, you'd send this via email)
-    console.log("Contact form submission:", emailContent)
+Message:
+${message}
 
-    // You can also save to a database here if needed
+---
+Submitted at: ${new Date().toLocaleString()}
+      `,
+    }
+
+    // Send email
+    await transporter.sendMail(mailOptions)
 
     return NextResponse.json({
       success: true,
-      message: "Contact form submitted successfully",
+      message: "Contact form submitted and email sent successfully",
     })
   } catch (error) {
     console.error("Contact form error:", error)
