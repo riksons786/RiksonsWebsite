@@ -81,7 +81,7 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg">
-              <Link href="#contact" className="flex items-center gap-2">
+              <Link href="/Contact" className="flex items-center gap-2">
                 Get Free Quote
                 <ArrowRight className="h-5 w-5" />
               </Link>
@@ -93,7 +93,7 @@ export function Hero() {
               size="lg"
               className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg bg-transparent"
             >
-              <Link href="#portfolio" className="flex items-center gap-2">
+              <Link href="/Portfolio" className="flex items-center gap-2">
                 <Play className="h-5 w-5" />
                 View Projects
               </Link>
