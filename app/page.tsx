@@ -9,6 +9,7 @@ import { Navigation } from "@/components/navigation/navbar"
 import { Footer } from "@/components/navigation/footer"
 import { ScrollToTop } from "@/components/ui/scroll-to-top"
 import PortfolioPage from "./Portfolio/page"
+import PortfolioLanding from "@/components/sections/portfolioLaning"
 
 
 export default function HomePage() {
@@ -16,7 +17,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <PortfolioPage />
+      <PortfolioLanding />
       <Footer />
       <ScrollToTop />
     </main>
