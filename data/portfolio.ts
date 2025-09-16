@@ -22,7 +22,7 @@ export const portfolioData: PortfolioItem[] = [
     description: "A contemporary residential development featuring sustainable design and modern amenities.",
     image: "/portfolio/01.jpg",
     details: {
-      client: "ABC Developers",
+      client: "Bahria Developers",
       location: "Lahore, Pakistan",
       year: "2023",
       area: "50,000 sq ft",
