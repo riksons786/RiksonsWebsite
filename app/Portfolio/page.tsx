@@ -4,13 +4,6 @@ import { Navigation } from "@/components/navigation/navbar"
 
 const categories = [
   {
-    id: "interior-design",
-    title: "Interior Design",
-    description: "Transforming spaces with innovative and functional interior solutions",
-    image: "/luxury-villa-interior.png",
-    href: "/Portfolio/Interior"
-  },
-  {
     id: "engineering",
     title: "Engineering",
     description: "Structural and MEP engineering solutions for complex projects",
@@ -30,6 +23,13 @@ const categories = [
     description: "End-to-end construction management and execution",
     image: "/construction-site-background.jpg",
     href: "/Portfolio/Construction"
+  },
+    {
+    id: "interior-design",
+    title: "Interior Design",
+    description: "Transforming spaces with innovative and functional interior solutions",
+    image: "/luxury-villa-interior.png",
+    href: "/Portfolio/Interior"
   },
 ]
 
