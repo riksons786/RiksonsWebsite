@@ -12,6 +12,7 @@ const BACKGROUND_IMAGES = [
   "/portfolio/Enscape_2024-11-19-16-53-45.png",
   "/portfolio/Enscape_2024-11-19-17-14-26.png",
   "/portfolio/Enscape_2025-01-10-15-34-31.png",
+   "/portfolio/left.jpg",
 ]
 
 export function Hero() {
