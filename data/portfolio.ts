@@ -263,6 +263,24 @@ export const portfolioData: PortfolioItem[] = [
       "/portfolio/CK_Photo - 5.jpg",
       ],
   },
+   {
+    id: "11",
+    title: "Town planning Projetcs",
+    category: "residential",
+    description: "A contemporary residential development featuring sustainable design and modern amenities.",
+    image: "/portfolio/03.jpg",
+    details: {
+      client: "Bahria Developers",
+      location: "Lahore, Pakistan",
+      year: "2023",
+      area: "50,000 sq ft",
+      services: ["Architecture", "Structural Engineering", "Construction", "Interior Design"],
+    },
+    gallery: [
+    
+
+    ]
+  },
 ]
 
 export const testimonials = [
