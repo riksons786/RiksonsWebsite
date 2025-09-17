@@ -37,7 +37,7 @@ export const portfolioData: PortfolioItem[] = [
       "/portfolio/07.jpg",
       "/portfolio/6.jpg",
       "/portfolio/12 (2).png",
-      "/portfolio/g4.jpg",
+      "/portfolio/G4.jpg",
 
     ]
   },
