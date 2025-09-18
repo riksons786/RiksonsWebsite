@@ -61,7 +61,7 @@ export function Contact() {
     const message = encodeURIComponent(
       "Hello! I'm interested in your construction services. Could you please provide more information?",
     )
-    window.open(`https://wa.me/923125191649?text=${message}`, "_blank")
+    window.open(`https://wa.me/923115445339?text=${message}`, "_blank")
   }
 
   const contactInfo = [
