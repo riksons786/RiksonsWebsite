@@ -4,18 +4,18 @@ import { Navigation } from "@/components/navigation/navbar"
 
 const categories = [
   {
-    id: "engineering",
-    title: "Engineering",
-    description: "Structural and MEP engineering solutions for complex projects",
-    image: "/industrial-facility-interior.png",
-    href: "/Portfolio/Engineering"
-  },
-  {
     id: "architecture",
     title: "Architecture",
     description: "Contemporary architectural designs that blend form and function",
     image: "/modern-residential-complex-architecture.jpg",
     href: "/Portfolio/Architecture"
+  },
+  {
+    id: "engineering",
+    title: "Engineering",
+    description: "Structural and MEP engineering solutions for complex projects",
+    image: "/industrial-facility-interior.png",
+    href: "/Portfolio/Engineering"
   },
   {
     id: "construction",
@@ -24,7 +24,7 @@ const categories = [
     image: "/construction-site-background.jpg",
     href: "/Portfolio/Construction"
   },
-    {
+  {
     id: "interior-design",
     title: "Interior Design",
     description: "Transforming spaces with innovative and functional interior solutions",
