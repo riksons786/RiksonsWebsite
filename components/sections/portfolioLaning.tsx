@@ -4,11 +4,11 @@ import { Navigation } from "@/components/navigation/navbar"
 
 const categories = [
   {
-    id: "interior-design",
-    title: "Interior Design",
-    description: "Transforming spaces with innovative and functional interior solutions",
-    image: "/luxury-villa-interior.png",
-    href: "/Portfolio/Interior"
+    id: "architecture",
+    title: "Architecture",
+    description: "Contemporary architectural designs that blend form and function",
+    image: "/modern-residential-complex-architecture.jpg",
+    href: "/Portfolio/Architecture"
   },
   {
     id: "engineering",
@@ -18,18 +18,18 @@ const categories = [
     href: "/Portfolio/Engineering"
   },
   {
-    id: "architecture",
-    title: "Architecture",
-    description: "Contemporary architectural designs that blend form and function",
-    image: "/modern-residential-complex-architecture.jpg",
-    href: "/Portfolio/Architecture"
-  },
-  {
     id: "construction",
     title: "Construction",
     description: "End-to-end construction management and execution",
     image: "/construction-site-background.jpg",
     href: "/Portfolio/Construction"
+  },
+  {
+    id: "interior-design",
+    title: "Interior Design",
+    description: "Transforming spaces with innovative and functional interior solutions",
+    image: "/luxury-villa-interior.png",
+    href: "/Portfolio/Interior"
   },
 ]
 
