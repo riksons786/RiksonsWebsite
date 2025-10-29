@@ -23,9 +23,9 @@ export const portfolioData: PortfolioItem[] = [
     image: "/portfolio/03.jpg",
     details: {
       client: "Bahria Developers",
-      location: "Lahore, Pakistan",
-      year: "2023",
-      area: "50,000 sq ft",
+      location: "Kallar kahar, Pakistan",
+      year: "2025",
+      area: "6,000 sq ft",
       services: ["Architecture", "Structural Engineering", "Construction", "Interior Design"],
     },
     gallery: [
