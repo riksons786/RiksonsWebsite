@@ -19,7 +19,7 @@ export const portfolioData: PortfolioItem[] = [
     id: "1",
     title: "Classical Residential Project",
     category: "residential",
-    description: "A contemporary residential development featuring sustainable design and modern amenities.",
+    description: "A classical residential farm house featuring sustainable design and modern amenities.",
     image: "/portfolio/03.jpg",
     details: {
       client: "Bahria Developers",
