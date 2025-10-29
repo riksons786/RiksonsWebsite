@@ -115,7 +115,7 @@ export const portfolioData: PortfolioItem[] = [
       location: "Islamabad, Pakistan",
       year: "2024",
       area: "67 ACRE",
-      services: ["Architecture", "Landscape Architecture, "RENDERS"],
+      services: ["Architecture", "Landscape Architecture","RENDERS"],
     },
     gallery: [
       "/portfolio/3 (3).jpg",
