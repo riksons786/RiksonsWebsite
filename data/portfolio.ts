@@ -150,16 +150,16 @@ export const portfolioData: PortfolioItem[] = [
 
    {
     id: "6",
-    title: "Modern Theme House",
+    title: "Modern House",
     category: "residential",
-    description: "Exclusive luxury villa with premium finishes and landscaped gardens.",
+    description: "Corner 1 kanal house with sun room and basement with pool.",
     image: "/portfolio/12-H_2 - Photo.jpg",
     details: {
       client: "Private Client",
-      location: "Islamabad, Pakistan",
-      year: "2023",
+      location: "DHA Islamabad, Pakistan",
+      year: "2024",
       area: "8,000 sq ft",
-      services: ["Architecture", "Interior Design", "Landscape Architecture"],
+      services: ["Architecture Design", "Structure Design", "3D renders"],
     },
     gallery: [
       "/portfolio/12-H_3 - Photo.jpg",
@@ -172,16 +172,16 @@ export const portfolioData: PortfolioItem[] = [
 
   {
     id: "7",
-    title: "Italian Theme House",
+    title: "Spanish Theme House",
     category: "residential",
-    description: "Exclusive luxury villa with premium finishes and landscaped gardens.",
+    description: "Massive front garden and classical details making this house a unique model.",
     image: "/portfolio/593 exterior.jpg",
     details: {
       client: "Private Client",
-      location: "Islamabad, Pakistan",
-      year: "2023",
+      location: "Bahria Town,Rawalpindi, Pakistan",
+      year: "2024",
       area: "8,000 sq ft",
-      services: ["Architecture", "Interior Design", "Landscape Architecture"],
+      services: ["Architecture", "Structure design", "Supervision"],
     },
     gallery: [
      
