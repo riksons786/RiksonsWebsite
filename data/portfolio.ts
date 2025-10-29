@@ -17,7 +17,7 @@ export interface PortfolioItem {
 export const portfolioData: PortfolioItem[] = [
   {
     id: "1",
-    title: "Classical Residential Projetcs",
+    title: "Classical Residential Project",
     category: "residential",
     description: "A contemporary residential development featuring sustainable design and modern amenities.",
     image: "/portfolio/03.jpg",
