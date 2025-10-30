@@ -192,14 +192,14 @@ export const portfolioData: PortfolioItem[] = [
     id: "8",
     title: "Corner Mansion",
     category: "residential",
-    description: "Exclusive luxury villa with premium finishes and landscaped gardens.",
+    description: "Classical details with white theme, a corner 01 kanal house with 02 kanal lawn area at rear and left side",
     image: "/portfolio/corner.jpg",
     details: {
       client: "Private Client",
       location: "Islamabad, Pakistan",
-      year: "2023",
-      area: "8,000 sq ft",
-      services: ["Architecture", "Interior Design", "Landscape Architecture"],
+      year: "2025",
+      area: "10,000 sq ft",
+      services: ["Architecture Design", "M.E.P","Structure Design", "Landscape Architecture"],
     },
     gallery: [
       "/portfolio/corner.jpg",
@@ -209,16 +209,16 @@ export const portfolioData: PortfolioItem[] = [
 
   {
     id: "9",
-    title: "Most Luxury Mansion",
+    title: "04 kanal Luxury Mansion",
     category: "residential",
-    description: "Exclusive luxury villa with premium finishes and landscaped gardens.",
+    description: "Exclusive luxury villa with premium finishes and modern contemporary design.",
     image: "/portfolio/Enscape_2025-09-08-13-38-18.jpg",
     details: {
       client: "Private Client",
       location: "Islamabad, Pakistan",
-      year: "2023",
-      area: "8,000 sq ft",
-      services: ["Architecture", "Interior Design", "Landscape Architecture"],
+      year: "2025",
+      area: "12,000 sq ft",
+      services: ["Architecture Design", "Structure Design","M.E.P", "Landscape Architecture"],
     },
     gallery: [
       "/portfolio/Enscape_2025-09-08-12-44-22.jpg",
