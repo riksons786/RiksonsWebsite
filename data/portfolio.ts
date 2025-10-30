@@ -246,16 +246,16 @@ export const portfolioData: PortfolioItem[] = [
 
   {
     id: "10",
-    title: "Italian Theme House",
+    title: "Italian House",
     category: "residential",
-    description: "Exclusive luxury villa with premium finishes and landscaped gardens.",
+    description: "Classical house with seperate porch/garrage area for vehicles.",
     image: "/portfolio/WSL_Photo - 1.jpg",
     details: {
       client: "Private Client",
-      location: "Islamabad, Pakistan",
-      year: "2023",
+      location: "DHA, Islamabad, Pakistan",
+      year: "2024",
       area: "8,000 sq ft",
-      services: ["Architecture", "Interior Design", "Landscape Architecture"],
+      services: ["Architecture", "Lawn Design", "Landscape Architecture"],
     },
     gallery: [
       "/portfolio/WSL_Photo - 4.jpg",
