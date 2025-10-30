@@ -284,7 +284,7 @@ export const testimonials = [
     id: "3",
     name: "Shaik Junaid",
     rating: 5,
-    text: "I have done structure design from there company, I am very much satisfied with there service.",
+    text: "I have done structure design from their company, I am very much satisfied with there service.",
     project: "House Structure Design",
   },
 ]
@@ -294,7 +294,7 @@ export const faqData = [
     id: "1",
     question: "What services does Riksons Engineering provide?",
     answer:
-      "We offer comprehensive architecture, engineering, and construction services including,archittcural design, structural engineering, project management, and construction supervision for residential, commercial, and industrial projects.",
+      "We offer comprehensive architecture, engineering, and construction services including,architectural design, structural engineering, project management, and construction supervision for residential, commercial, and industrial projects.",
   },
   {
     id: "2",
