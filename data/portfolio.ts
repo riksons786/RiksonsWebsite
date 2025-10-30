@@ -263,6 +263,30 @@ export const portfolioData: PortfolioItem[] = [
       ],
   },
 
+ {
+    id: "11",
+    title: "Commercial Building",
+    category: "Commercial",
+    description: "A mixed use commercial building with shopes and residential appartments at CBR town.",
+    image: "/portfolio/1_14 - Photo.jpg",
+    details: {
+      client: "Sky Nine",
+      location: "Islamabad, Pakistan",
+      year: "2025",
+      area: "9,000 sq ft",
+      services: ["3D Design", "Interior Renders", "3D Model"],
+    },
+    gallery: [
+      "/portfolio/cbr 1.png",
+      "/portfolio/cbr 2.png",
+       "/portfolio/cbr 3.png",
+       "/portfolio/cbr 4.png",
+       "/portfolio/cbr 5.png",
+       "/portfolio/cbr 6.png",
+    ],
+  },
+
+  
 ]
 
 export const testimonials = [
