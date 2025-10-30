@@ -294,13 +294,13 @@ export const faqData = [
     id: "1",
     question: "What services does Riksons Engineering provide?",
     answer:
-      "We offer comprehensive architecture, engineering, and construction services including design, structural engineering, project management, and construction supervision for residential, commercial, and industrial projects.",
+      "We offer comprehensive architecture, engineering, and construction services including,archittcural design, structural engineering, project management, and construction supervision for residential, commercial, and industrial projects.",
   },
   {
     id: "2",
     question: "How long does a typical project take?",
     answer:
-      "Project timelines vary depending on scope and complexity. Residential projects typically take 6-12 months, while commercial and industrial projects may take 12-24 months. We provide detailed timelines during the planning phase.",
+      "Project timelines vary depending on scope and complexity. Residential projects typically take 2-3 weeks, while commercial and industrial projects may take 1-2 months. We provide detailed timelines during the planning phase.",
   },
   {
     id: "3",
@@ -312,7 +312,7 @@ export const faqData = [
     id: "4",
     question: "What areas do you serve?",
     answer:
-      "We primarily serve clients across Pakistan, with major projects in Lahore, Karachi, Islamabad, and Faisalabad. We also consider projects in other regions based on scope and requirements.",
+      "We primarily serve clients across Pakistan, with major projects in Lahore, Karachi, Rawalpindi, Islamabad, and Faisalabad. We also consider projects in other regions based on scope and requirements.",
   },
   {
     id: "5",
