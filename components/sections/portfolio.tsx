@@ -12,7 +12,7 @@ import Image from "next/image"
 const serviceCategories = [
   { id: "architecture", label: "Architecture" },
   { id: "construction", label: "Construction" },
-  { id: "interior design", label: "Interior Design" },
+  { id: "interior_design", label: "Interior Design" },
   { id: "engineering", label: "Engineering" },
 ]
 
