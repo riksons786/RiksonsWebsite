@@ -10,7 +10,7 @@ import { MapPin, Calendar, Ruler, Eye, X, ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-// Service mapping with expanded "interior design"
+// Expanded interior mappings
 const serviceCategoryMap: Record<string, string[]> = {
   architecture: [
     "architecture",
@@ -44,16 +44,16 @@ const serviceCategoryMap: Record<string, string[]> = {
     "3d renders",
     "3d render",
     "lawn design",
-    "renders"
+    "renders",
+    "3d design render"
   ]
 }
 
-// Improved normalization: lower, no spaces, no `.`, `,`
 function normalize(str: string) {
   return str
     .toLowerCase()
     .replace(/\s+/g, "")
-    .replace(/[.,]/g, "");
+    .replace(/[.,\-]/g, "");
 }
 
 interface PortfolioCategoryProps {
@@ -69,14 +69,13 @@ export function PortfolioCategory({ category, categoryTitle }: PortfolioCategory
 
   const DISPLAY_LIMIT = 6 // 2 rows (3 columns each)
 
-  // Use normalized mapping for robust matching.
+  // Use normalized mapping for robust, exact matching
   const normalizedCategory = normalize(category)
-  const categoryServices = (serviceCategoryMap[normalizedCategory] || [normalizedCategory]).map(normalize)
+  const categoryServicesRaw = serviceCategoryMap[normalizedCategory] || [normalizedCategory]
+  const categoryServices = categoryServicesRaw.map(normalize)
   const filteredProjects = portfolioData.filter((project) =>
     project.details.services.some((service) =>
-      categoryServices.some((catService) =>
-        normalize(service).includes(catService)
-      )
+      categoryServices.includes(normalize(service))
     )
   )
 
