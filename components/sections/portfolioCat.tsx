@@ -37,7 +37,8 @@ const serviceCategoryMap: Record<string, string[]> = {
     "interior design",
     "interior renders",
     "3d model",
-    "lawn design"
+    "lawn design",
+    "3d renders"
   ]
 }
 
