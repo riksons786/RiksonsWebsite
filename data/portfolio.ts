@@ -89,7 +89,7 @@ export const portfolioData: PortfolioItem[] = [
       location: "Chakwal, Pakistan",
       year: "2025",
       area: "1,000 sq ft",
-      services: ["Architecture Design", "Structure Design", "Renders"],
+      services: ["Architecture", "Structure Design", "Renders"],
     },
     gallery: [
       "/portfolio/G1.jpg",
