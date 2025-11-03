@@ -11,6 +11,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 // Expanded interior mappings
+// Expanded interior mappings - keys should match possible normalized category values
 const serviceCategoryMap: Record<string, string[]> = {
   architecture: [
     "architecture",
@@ -34,6 +35,21 @@ const serviceCategoryMap: Record<string, string[]> = {
     "supervision"
   ],
   interior: [
+    "interior design",
+    "interior renders",
+    "interior render",
+    "interior",
+    "3d model",
+    "3d design",
+    "3d design renders",
+    "3d renders",
+    "3d render",
+    "lawn design",
+    "renders",
+    "3d design render"
+  ],
+  // Add normalized version as well
+  interiordesign: [
     "interior design",
     "interior renders",
     "interior render",
