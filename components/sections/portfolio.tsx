@@ -32,7 +32,7 @@ const serviceCategoryMap: Record<string, string[]> = {
     "structural engineering",
     "structure design"
   ],
-  "interior design": [
+  interior: [
     "interior design",
     "interior renders",
     "interior render",
@@ -58,7 +58,7 @@ function normalize(str: string) {
 const serviceCategories = [
   { id: "architecture", label: "Architecture" },
   { id: "construction", label: "Construction" },
-  { id: "interior design", label: "Interior Design" },
+  { id: "interior", label: "Interior Design" },
   { id: "engineering", label: "Engineering" },
 ]
 
