@@ -10,7 +10,7 @@ import { MapPin, Calendar, Ruler, Eye, X, ArrowLeft } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-// Add your mapping of main service categories to sub-services here
+// Service mapping with expanded "interior design"
 const serviceCategoryMap: Record<string, string[]> = {
   architecture: [
     "architecture",
@@ -33,13 +33,27 @@ const serviceCategoryMap: Record<string, string[]> = {
     "construction",
     "supervision"
   ],
-  interior_design: [
+  "interior design": [
     "interior design",
     "interior renders",
+    "interior render",
+    "interior",
     "3d model",
+    "3d design",
+    "3d design renders",
+    "3d renders",
+    "3d render",
     "lawn design",
-    "3d renders"
+    "renders"
   ]
+}
+
+// Improved normalization: lower, no spaces, no `.`, `,`
+function normalize(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[.,]/g, "");
 }
 
 interface PortfolioCategoryProps {
@@ -55,13 +69,13 @@ export function PortfolioCategory({ category, categoryTitle }: PortfolioCategory
 
   const DISPLAY_LIMIT = 6 // 2 rows (3 columns each)
 
-  // Improved mapping: normalize category and match sub-services for filtering
-  const normalizedCategory = category.toLowerCase().replace(/\s+/g, "")
-  const categoryServices = serviceCategoryMap[normalizedCategory] || [normalizedCategory]
+  // Use normalized mapping for robust matching.
+  const normalizedCategory = normalize(category)
+  const categoryServices = (serviceCategoryMap[normalizedCategory] || [normalizedCategory]).map(normalize)
   const filteredProjects = portfolioData.filter((project) =>
     project.details.services.some((service) =>
       categoryServices.some((catService) =>
-        service.toLowerCase().replace(/\s+/g, "").includes(catService.toLowerCase().replace(/\s+/g, ""))
+        normalize(service).includes(catService)
       )
     )
   )
