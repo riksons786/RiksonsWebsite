@@ -9,6 +9,52 @@ import { portfolioData, type PortfolioItem } from "@/data/portfolio"
 import { MapPin, Calendar, Ruler, Eye, X } from "lucide-react"
 import Image from "next/image"
 
+// Service mapping for fuzzy filtering by category (especially for interior design)
+const serviceCategoryMap: Record<string, string[]> = {
+  architecture: [
+    "architecture",
+    "architecture design",
+    "structure design",
+    "structural engineering",
+    "industrial design",
+    "landscape architecture",
+    "3d design",
+    "renders"
+  ],
+  construction: [
+    "construction",
+    "supervision"
+  ],
+  engineering: [
+    "engineering",
+    "m.e.p",
+    "mep engineering",
+    "structural engineering",
+    "structure design"
+  ],
+  "interior design": [
+    "interior design",
+    "interior renders",
+    "interior render",
+    "interior",
+    "3d model",
+    "3d design",
+    "3d design renders",
+    "3d renders",
+    "3d render",
+    "lawn design",
+    "renders",
+    "3d design render"
+  ]
+}
+
+function normalize(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[.,\-]/g, "")
+}
+
 const serviceCategories = [
   { id: "architecture", label: "Architecture" },
   { id: "construction", label: "Construction" },
@@ -26,10 +72,13 @@ export function Portfolio() {
 
   const DISPLAY_LIMIT = 6 // 2 rows (3 columns each)
 
-  // Filter projects by service: show projects that have selectedService in their details.services
+  // Fuzzy service matching
+  const normalizedSelectedService = normalize(selectedService)
+  const categoryServicesRaw = serviceCategoryMap[normalizedSelectedService] || [normalizedSelectedService]
+  const categoryServices = categoryServicesRaw.map(normalize)
   const filteredProjects = portfolioData.filter((project) =>
-    project.details.services.some(
-      (service) => service.toLowerCase().replace(/\s+/g, "") === selectedService.replace(/\s+/g, "")
+    project.details.services.some(service =>
+      categoryServices.includes(normalize(service))
     )
   )
 
