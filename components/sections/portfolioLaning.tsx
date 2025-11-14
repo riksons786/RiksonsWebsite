@@ -41,7 +41,7 @@ export default function PortfolioLanding() {
       <div className="text-center mb-16">
           <span className="text-primary font-semibold text-lg">Our Portfolio</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4 text-balance">
-            Showcasing Excellence in Construction
+            Showcasing Excellence in Engineering Design and Construction
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto text-pretty">
             Explore our diverse portfolio of completed projects spanning residential, commercial, and industrial sectors. Each project represents our commitment to quality, innovation, and client satisfaction.
