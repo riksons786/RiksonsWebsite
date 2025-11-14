@@ -44,7 +44,7 @@ export function About() {
                 Building Excellence Since 2008
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Riksons Engineering Pvt Ltd has been at the forefront of Pakistan's construction industry, delivering
+                Riksons Engineering Pvt Ltd has been at the forefront of Pakistan's on one window opertion from designing till completion of house, delivering
                 innovative architectural solutions, robust engineering designs, and superior construction services for
                 over 15 years.
               </p>
