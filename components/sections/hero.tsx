@@ -99,7 +99,7 @@ export function Hero() {
           {/* Stats */}
           <div style={{paddingBottom: "40px"}} className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-white/20">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">50+</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">700+</div>
               <div className="text-gray-300">Projects Completed</div>
             </div>
             <div className="text-center">
