@@ -71,7 +71,7 @@ export function FAQ() {
           </div>
           <h3 className="text-2xl font-bold text-foreground mb-4">Still Have Questions?</h3>
           <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-            Can't find the answer you're looking for? Our expert team is here to help you with any questions about your
+            Can't find the answer you're looking for? Our expert team is here to help you with any questions about your design and 
             construction project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
