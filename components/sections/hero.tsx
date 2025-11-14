@@ -107,7 +107,7 @@ export function Hero() {
               <div className="text-gray-300">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">100+</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">1000+</div>
               <div className="text-gray-300">Happy Clients</div>
             </div>
             <div className="text-center">
